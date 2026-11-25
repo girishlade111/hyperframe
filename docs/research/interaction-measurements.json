@@ -1,0 +1,194 @@
+{
+  "menuMetrics": {
+    "display": "block",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "backgroundImage": "url(\"https://cdn.prod.website-files.com/6aa45e09ba450614298f7d59/6aa6675a9d104f28ed83db94_Changelog%20BG.avif\")",
+    "height": 900,
+    "links": [
+      {
+        "text": "{Home}",
+        "href": "/",
+        "fontSize": "60px",
+        "color": "rgba(255, 255, 255, 0.6)"
+      },
+      {
+        "text": "{About}",
+        "href": "/about",
+        "fontSize": "60px",
+        "color": "rgba(255, 255, 255, 0.6)"
+      },
+      {
+        "text": "{Services}",
+        "href": "/service",
+        "fontSize": "60px",
+        "color": "rgba(255, 255, 255, 0.6)"
+      },
+      {
+        "text": "{Projects}",
+        "href": "/project",
+        "fontSize": "60px",
+        "color": "rgba(255, 255, 255, 0.6)"
+      },
+      {
+        "text": "{Blogs}",
+        "href": "/blog",
+        "fontSize": "60px",
+        "color": "rgba(255, 255, 255, 0.6)"
+      },
+      {
+        "text": "{Contact}",
+        "href": "/contact",
+        "fontSize": "60px",
+        "color": "rgba(255, 255, 255, 0.6)"
+      }
+    ]
+  },
+  "projectCount": 3,
+  "projectFrames": [
+    {
+      "frac": 0.1,
+      "scrollY": 2100,
+      "transforms": [
+        {
+          "index": 0,
+          "top": 109,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        },
+        {
+          "index": 1,
+          "top": 699,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        },
+        {
+          "index": 2,
+          "top": 1309,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        }
+      ]
+    },
+    {
+      "frac": 0.35,
+      "scrollY": 2682,
+      "transforms": [
+        {
+          "index": 0,
+          "top": 89,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        },
+        {
+          "index": 1,
+          "top": 132,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        },
+        {
+          "index": 2,
+          "top": 707,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        }
+      ]
+    },
+    {
+      "frac": 0.6,
+      "scrollY": 3264,
+      "transforms": [
+        {
+          "index": 0,
+          "top": 54,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        },
+        {
+          "index": 1,
+          "top": 54,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        },
+        {
+          "index": 2,
+          "top": 125,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        }
+      ]
+    },
+    {
+      "frac": 0.85,
+      "scrollY": 3846,
+      "transforms": [
+        {
+          "index": 0,
+          "top": -528,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        },
+        {
+          "index": 1,
+          "top": -528,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        },
+        {
+          "index": 2,
+          "top": -457,
+          "position": "sticky",
+          "cardTransform": "none",
+          "cardScale": "none"
+        }
+      ]
+    }
+  ],
+  "serviceHoverMetrics": [
+    {
+      "index": 0,
+      "title": "Branding",
+      "titleColor": "rgb(103, 110, 128)",
+      "bottomHeight": 0,
+      "bottomOpacity": "1"
+    },
+    {
+      "index": 1,
+      "title": "UI & UX Design",
+      "titleColor": "rgb(103, 110, 128)",
+      "bottomHeight": 0,
+      "bottomOpacity": "1"
+    },
+    {
+      "index": 2,
+      "title": "Illustration Design",
+      "titleColor": "rgb(103, 110, 128)",
+      "bottomHeight": 0,
+      "bottomOpacity": "1"
+    },
+    {
+      "index": 3,
+      "title": "No Code Development",
+      "titleColor": "rgb(103, 110, 128)",
+      "bottomHeight": 0,
+      "bottomOpacity": "1"
+    },
+    {
+      "index": 4,
+      "title": "Custom Development",
+      "titleColor": "rgb(103, 110, 128)",
+      "bottomHeight": 0,
+      "bottomOpacity": "1"
+    }
+  ]
+}
