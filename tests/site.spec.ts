@@ -165,6 +165,7 @@ test.describe('HyperFrame Interactive States & Forms', () => {
     const toggle = pricingWrap.getByRole('switch').first();
     await toggle.click();
     await expect(toggle).toHaveAttribute('aria-checked', 'true');
+    await expect(pricingWrap).toContainText('$5,499');
   });
 
   test('contact form validates required inputs and submits local preview cleanly', async ({ page }) => {
