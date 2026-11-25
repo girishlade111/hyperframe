@@ -1,0 +1,85 @@
+[
+  {
+    "route": "/",
+    "wallLoadMs": 1743,
+    "fcpMs": 1288,
+    "lcpMs": 1332,
+    "cls": 0,
+    "domInteractiveMs": 39,
+    "transferKB": 1684.3,
+    "resourceCount": 49,
+    "externalRequests": [
+      "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    ]
+  },
+  {
+    "route": "/about",
+    "wallLoadMs": 630,
+    "fcpMs": 100,
+    "lcpMs": 100,
+    "cls": 0.0188,
+    "domInteractiveMs": 19,
+    "transferKB": 157.5,
+    "resourceCount": 42,
+    "externalRequests": [
+      "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
+      "https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2"
+    ]
+  },
+  {
+    "route": "/service",
+    "wallLoadMs": 627,
+    "fcpMs": 128,
+    "lcpMs": 140,
+    "cls": 0.0117,
+    "domInteractiveMs": 16,
+    "transferKB": 142.4,
+    "resourceCount": 57,
+    "externalRequests": [
+      "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
+      "https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2"
+    ]
+  },
+  {
+    "route": "/project",
+    "wallLoadMs": 590,
+    "fcpMs": 116,
+    "lcpMs": 132,
+    "cls": 0.0151,
+    "domInteractiveMs": 18,
+    "transferKB": 51.1,
+    "resourceCount": 35,
+    "externalRequests": [
+      "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
+      "https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2"
+    ]
+  },
+  {
+    "route": "/blog",
+    "wallLoadMs": 616,
+    "fcpMs": 88,
+    "lcpMs": 88,
+    "cls": 0.0309,
+    "domInteractiveMs": 17,
+    "transferKB": 232.3,
+    "resourceCount": 28,
+    "externalRequests": [
+      "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
+      "https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2"
+    ]
+  },
+  {
+    "route": "/contact",
+    "wallLoadMs": 616,
+    "fcpMs": 144,
+    "lcpMs": 168,
+    "cls": 0,
+    "domInteractiveMs": 20,
+    "transferKB": 25.2,
+    "resourceCount": 24,
+    "externalRequests": [
+      "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
+      "https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2"
+    ]
+  }
+]
