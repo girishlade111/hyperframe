@@ -14,20 +14,28 @@ const VIEWPORTS = [
   { name: 'mobile-390', width: 390, height: 844 },
 ];
 
-async function captureStable(url: string, width: number, height: number, outFile: string) {
-  const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage({ viewport: { width, height } });
+async function captureStable(
+  page: import('playwright').Page,
+  url: string,
+  width: number,
+  height: number,
+  outFile: string
+) {
+  await page.setViewportSize({ width, height });
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
-  await page.waitForTimeout(1500);
-  // Scroll through once to trigger lazy images and reveal animations, then return to top
+  await page.waitForTimeout(1200);
   await page.evaluate(async () => {
+    const step = Math.max(450, Math.floor(window.innerHeight * 0.75));
+    for (let y = 0; y <= document.body.scrollHeight; y += step) {
+      window.scrollTo(0, y);
+      await new Promise((r) => setTimeout(r, 80));
+    }
     window.scrollTo(0, document.body.scrollHeight);
-    await new Promise((r) => setTimeout(r, 400));
+    await new Promise((r) => setTimeout(r, 250));
     window.scrollTo(0, 0);
   });
-  await page.waitForTimeout(800);
+  await page.waitForTimeout(700);
   await page.screenshot({ path: outFile, fullPage: true });
-  await browser.close();
 }
 
 function diffPng(refPath: string, localPath: string, diffPath: string) {
@@ -49,12 +57,22 @@ function diffPng(refPath: string, localPath: string, diffPath: string) {
   const mismatched = pixelmatch(crop(img1), crop(img2), diff.data, width, height, { threshold: 0.15 });
   fs.writeFileSync(diffPath, PNG.sync.write(diff));
   const ratio = mismatched / (width * height);
-  return { width, height, refHeight: img1.height, localHeight: img2.height, mismatched, diffPercent: Number((ratio * 100).toFixed(2)) };
+  return {
+    width,
+    height,
+    refHeight: img1.height,
+    localHeight: img2.height,
+    heightDelta: Math.abs(img1.height - img2.height),
+    mismatched,
+    diffPercent: Number((ratio * 100).toFixed(2)),
+  };
 }
 
 async function main() {
   const outBase = path.resolve('docs/testing/screenshots');
   fs.mkdirSync(outBase, { recursive: true });
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
   const report: Array<Record<string, unknown>> = [];
 
   for (const vp of VIEWPORTS) {
@@ -65,16 +83,19 @@ async function main() {
       const diffPath = path.join(outBase, `${slug}-${vp.name}-diff.png`);
 
       if (!fs.existsSync(refPath)) {
-        await captureStable(`${REF_URL}${route === '/' ? '' : route}`, vp.width, vp.height, refPath);
+        await captureStable(page, `${REF_URL}${route === '/' ? '' : route}`, vp.width, vp.height, refPath);
       }
-      await captureStable(`${LOCAL_URL}${route}`, vp.width, vp.height, localPath);
+      await captureStable(page, `${LOCAL_URL}${route}`, vp.width, vp.height, localPath);
 
       const metrics = diffPng(refPath, localPath, diffPath);
       report.push({ route, viewport: vp.name, ...metrics });
-      console.log(`${route} [${vp.name}] -> diff: ${metrics.diffPercent}% (refH=${metrics.refHeight}, localH=${metrics.localHeight})`);
+      console.log(
+        `${route} [${vp.name}] -> diff: ${metrics.diffPercent}% (refH=${metrics.refHeight}, localH=${metrics.localHeight})`
+      );
     }
   }
 
+  await browser.close();
   fs.writeFileSync(path.join(outBase, 'comparison-metrics.json'), JSON.stringify(report, null, 2));
 }
 
