@@ -83,8 +83,16 @@ export function Footer() {
                   disabled={status === 'loading'}
                 />
               </form>
-              {status === 'success' && <div className="success-message">{message}</div>}
-              {status === 'error' && <div className="error-message">{message}</div>}
+              {status === 'success' && (
+                <div role="status" className="success-message">
+                  {message}
+                </div>
+              )}
+              {status === 'error' && (
+                <div role="alert" className="error-message">
+                  {message}
+                </div>
+              )}
             </div>
           </div>
 

@@ -181,8 +181,16 @@ export function ContactForm() {
               </button>
             </div>
 
-            {submitState === 'success' && <div className="success-message">{statusMessage}</div>}
-            {submitState === 'error' && <div className="error-message">{statusMessage}</div>}
+            {submitState === 'success' && (
+              <div role="status" className="success-message">
+                {statusMessage}
+              </div>
+            )}
+            {submitState === 'error' && (
+              <div role="alert" className="error-message">
+                {statusMessage}
+              </div>
+            )}
           </form>
         </div>
       </div>

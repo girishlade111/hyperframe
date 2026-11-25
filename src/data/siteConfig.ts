@@ -75,7 +75,7 @@ export const siteConfig = {
     {
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/',
-      grayIcon: '/assets/icons/linkedin-02.svg',
+      grayIcon: '/assets/icons/Linkedin-02.svg',
       orangeIcon: '/assets/icons/linkedin-02-1.svg',
     },
   ] as SocialLink[],
