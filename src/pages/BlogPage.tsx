@@ -71,7 +71,7 @@ export function BlogPage() {
 
       <section className="section blog">
         <div className="container">
-          <div className="blog-b-top-left-wrap" style={{ alignItems: 'center', textAlign: 'center' }}>
+          <div className="blog-b-top-left-wrap">
             <SectionLabel variant="brace" label="Our Blogs & Insights" />
             <h2 className="section-title is-h3-medium">Browse All Blogs</h2>
           </div>

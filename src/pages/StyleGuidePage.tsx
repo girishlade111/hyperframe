@@ -4,29 +4,20 @@ import { usePageMeta } from '../components/common/usePageMeta';
 
 const colorGroups = [
   {
-    groupTitle: 'Primary Color',
-    isWhiteStar: false,
+    groupTitle: 'Brand Color',
     swatches: [{ name: 'Primary Color', hex: '#FF4C03', bg: 'var(--primary-color)', border: false }],
   },
   {
-    groupTitle: 'Title Color',
-    isWhiteStar: false,
+    groupTitle: 'Text Colors',
     swatches: [
       { name: 'Title Dark', hex: '#03020B', bg: 'var(--balck-900)', border: false },
       { name: 'Title White', hex: '#FFFFFF', bg: 'var(--white)', border: true },
-    ],
-  },
-  {
-    groupTitle: 'Paragraph Color',
-    isWhiteStar: false,
-    swatches: [
       { name: 'Paragraph Dark', hex: '#676E80', bg: 'var(--gray-500)', border: false },
       { name: 'Paragraph Grey', hex: '#E1E2E5', bg: 'var(--gray-400)', border: false },
     ],
   },
   {
-    groupTitle: 'Background Color',
-    isWhiteStar: false,
+    groupTitle: 'Background Colors',
     swatches: [
       { name: 'Background Dark', hex: '#03020B', bg: 'var(--balck-900)', border: false },
       { name: 'Background White', hex: '#FFFFFF', bg: 'var(--white)', border: true },
@@ -35,26 +26,26 @@ const colorGroups = [
     ],
   },
   {
-    groupTitle: 'Stroke Color',
-    isWhiteStar: false,
+    groupTitle: 'Stroke Colors',
     swatches: [
       { name: 'Stroke Light', hex: '#E1E2E5', bg: 'var(--gray-400)', border: false },
-      { name: 'Stroke Dark', hex: '#595959', bg: 'var(--stroke-dark)', border: false },
+      { name: 'Stroke Dark', hex: '#595959', bg: '#595959', border: false },
     ],
   },
 ];
 
 const typographyRows = [
-  { label: 'Display Hero H1', tag: 'h1', className: 'hero-heading', spec: 'Size 140px / LH 100%', sample: 'Beyond The Pixel.' },
-  { label: 'Heading 1', tag: 'p', className: 'section-title is-h2', spec: 'Size 96px / LH 110%', sample: 'Heading 1' },
-  { label: 'Heading 2', tag: 'p', className: 'section-title', spec: 'Size 72px / LH 115%', sample: 'Heading 2' },
-  { label: 'Heading 3', tag: 'p', className: 'section-title is-h3-medium', spec: 'Size 72px / LH 115%', sample: 'Heading 3' },
-  { label: 'Heading 4', tag: 'p', className: 'section-title is-h4', spec: 'Size 56px / LH 115%', sample: 'Heading 4' },
-  { label: 'Heading 5', tag: 'p', className: 'section-title is-h5', spec: 'Size 48px / LH 120%', sample: 'Heading 5' },
-  { label: 'Heading 6', tag: 'p', className: 'section-title is-h6', spec: 'Size 40px / LH 120%', sample: 'Heading 6' },
-  { label: 'Body Copy Large', tag: 'p', className: 'global-details is-large-body', spec: 'Size 24px / LH 145%', sample: 'Body Copy Large' },
-  { label: 'Body Copy Base', tag: 'p', className: 'global-details', spec: 'Size 18px / LH 150%', sample: 'Body Copy Base' },
-  { label: 'Button Text Small', tag: 'p', className: 'menu-label', spec: 'Size 16px / LH 150%', sample: 'Button Text Small' },
+  { label: 'H1 Text', size: '140px', lh: '100%', fontSize: 'var(--text-h1)', lineHeight: 'var(--lh-s)', weight: 500, ls: 'var(--ls-3xl)' },
+  { label: 'H2 Text', size: '88px', lh: '100%', fontSize: 'var(--text-h2)', lineHeight: 'var(--lh-s)', weight: 500, ls: 'var(--ls-2xl)' },
+  { label: 'H3 Text', size: '60px', lh: '110%', fontSize: 'var(--text-h3)', lineHeight: 'var(--lh-m)', weight: 500, ls: 'var(--ls-xl)' },
+  { label: 'H4 Text', size: '48px', lh: '120%', fontSize: 'var(--text-h4)', lineHeight: 'var(--lh-l)', weight: 500, ls: 'var(--ls-l)' },
+  { label: 'H5 Text', size: '40px', lh: '120%', fontSize: 'var(--text-h5)', lineHeight: 'var(--lh-l)', weight: 500, ls: 'var(--ls-m)' },
+  { label: 'H6 Text', size: '32px', lh: '120%', fontSize: 'var(--text-h6)', lineHeight: 'var(--lh-l)', weight: 500, ls: 'var(--ls-s)' },
+  { label: 'Paragraph Large', size: '20px', lh: '150%', fontSize: 'var(--text-xl)', lineHeight: 'var(--lh-xl)', weight: 400 },
+  { label: 'Paragraph Medium', size: '18px', lh: '150%', fontSize: 'var(--text-l)', lineHeight: 'var(--lh-xl)', weight: 400 },
+  { label: 'Paragraph Small', size: '16px', lh: '150%', fontSize: 'var(--text-m)', lineHeight: 'var(--lh-xl)', weight: 400 },
+  { label: 'Paragraph Extra Small', size: '14px', lh: '150%', fontSize: 'var(--text-s)', lineHeight: 'var(--lh-xl)', weight: 400 },
+  { label: 'Button Text Small', size: '16px', lh: '150%', fontSize: 'var(--text-m)', lineHeight: 'var(--lh-xl)', weight: 500 },
 ];
 
 export function StyleGuidePage() {
@@ -77,7 +68,7 @@ export function StyleGuidePage() {
               </p>
             </div>
             <div className="inner-btn-wrap">
-              <PrimaryButton to="/" label="Back To Home" variant="back-light" />
+              <PrimaryButton to="/" label="Back To Home" variant="primary" tiltedArrow />
             </div>
           </div>
         </div>
@@ -92,7 +83,7 @@ export function StyleGuidePage() {
                 {colorGroups.map((group) => (
                   <div key={group.groupTitle} className="color-single-wrap">
                     <div className="color-title-wrap">
-                      <span className={`color-dot-wrap ${group.isWhiteStar ? 'is-white' : ''}`} aria-hidden="true">
+                      <span className="color-dot-wrap" aria-hidden="true">
                         <img
                           width={16}
                           height={16}
@@ -133,26 +124,35 @@ export function StyleGuidePage() {
                   <span className="color-dot-wrap is-white" aria-hidden="true">
                     <img width={16} height={16} alt="" src="/assets/icons/Blog-Star.svg" className="color-star-icon" />
                   </span>
-                  <span className="color-title">Typography Scale</span>
+                  <span className="color-title">Text Scaling</span>
                 </div>
-                <span className="color-title">Specs</span>
+                <div className="color-title-wrap">
+                  <span className="color-title">Text Size and Line Height</span>
+                  <span className="color-dot-wrap is-white" aria-hidden="true">
+                    <img width={16} height={16} alt="" src="/assets/icons/Blog-Star.svg" className="color-star-icon" />
+                  </span>
+                </div>
               </div>
 
               <div>
                 {typographyRows.map((row) => (
                   <div key={row.label} className="typo-single-wrap">
                     <div
-                      className={row.className}
                       style={{
                         color: 'var(--balck-900)',
+                        fontSize: row.fontSize,
+                        lineHeight: row.lineHeight,
+                        fontWeight: row.weight,
+                        letterSpacing: row.ls,
                         maxWidth: '72%',
                         overflowWrap: 'break-word',
                       }}
                     >
-                      {row.sample}
+                      {row.label}
                     </div>
                     <div className="typo-right-wrap">
-                      <span className="color-code">{row.spec}</span>
+                      <span className="color-code">{row.size}</span>
+                      <span className="color-code">{row.lh}</span>
                     </div>
                   </div>
                 ))}
@@ -162,7 +162,7 @@ export function StyleGuidePage() {
             <div className="style-single-wrap">
               <h2 className="section-title is-h3-medium">Buttons Style</h2>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
-                <PrimaryButton to="/contact" label="Primary Button" variant="primary" />
+                <PrimaryButton to="/contact" label="Primary Button" variant="primary" tiltedArrow />
                 <PrimaryButton to="/service" label="Grey Button" variant="grey" />
                 <PrimaryButton to="/" label="Back To Home" variant="back-dark" />
               </div>
