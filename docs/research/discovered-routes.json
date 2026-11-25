@@ -1,0 +1,1854 @@
+[
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io",
+    "localRoute": "/",
+    "title": "Hyperframe - Webflow HTML Website Template",
+    "status": 200,
+    "h1": "We develop websites, apps, and campaigns that truly make a difference for expanding brands.",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/project/profast",
+      "/project/securex",
+      "/project/spinex-pro",
+      "/service/branding",
+      "/service/ui-ux-design",
+      "/service/illustration-design",
+      "/service/no-code-development",
+      "/service/custom-development",
+      "/blog/5-website-design-trends-to-watch",
+      "/blog/how-to-create-a-design-systems",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section hero",
+        "id": "",
+        "textSample": "We develop websites, apps, and campaigns that truly make a difference for expanding brands.Design ThatDrives Results©20-25As a digital agenc"
+      },
+      {
+        "tag": "section",
+        "className": "section about-b",
+        "id": "",
+        "textSample": "(01)About HyperFrameWe offer a full range of services website design, development, and digital marketing to boost your brand’s success.Our c"
+      },
+      {
+        "tag": "section",
+        "className": "section project-a",
+        "id": "",
+        "textSample": "(02)Featured ProjectsOur Recent WorkOur cross-functional teams work together to achieve outstanding portfolios across all the digital channe"
+      },
+      {
+        "tag": "section",
+        "className": "section service-b",
+        "id": "",
+        "textSample": "(03)Our ServicesServices We ProvideBranding(001) We develop websites, apps, and campaigns that truly make a difference for expanding brands."
+      },
+      {
+        "tag": "section",
+        "className": "section testimonial-b",
+        "id": "",
+        "textSample": "(04)TestimonialsWhat Our Client SayOur cross-functional teams work together to achieve outstanding portfolios across all the digital channel"
+      },
+      {
+        "tag": "section",
+        "className": "section choose-b",
+        "id": "",
+        "textSample": "(05)Why Choose UsWhy Brands Trust UsGreat design is about more than just visuals — it’s about crafting meaningful experiences that lead to t"
+      },
+      {
+        "tag": "section",
+        "className": "section testimonial-b",
+        "id": "",
+        "textSample": "(06)Pricing PlansExplore Our PricingGreat design is about more than just visuals it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section process",
+        "id": "",
+        "textSample": "(07)Our ProcessFrom Idea To LaunchHere’s how we take your idea from concept to launch, making sure every step is smooth, transparent, and fo"
+      },
+      {
+        "tag": "section",
+        "className": "section team-b",
+        "id": "",
+        "textSample": "(08)Team MembersMeet Our TeamGreat design is about more than just visuals it’s about crafting meaningful experiences that lead to tangible r"
+      },
+      {
+        "tag": "section",
+        "className": "section stories-b",
+        "id": "",
+        "textSample": "(09)Success StoriesStories That Speak For ThemselvesGreat design is about more than just visuals — it’s about crafting meaningful experience"
+      },
+      {
+        "tag": "section",
+        "className": "section blog-b",
+        "id": "",
+        "textSample": "(10)Blogs & ArticlesOur Latest BlogsView All BlogsView All BlogsLearn MoreLearn More(002)September 22, 20265 Website Design Trends to WatchD"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "(11)Contact UsHave Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to t"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/about",
+    "localRoute": "/about",
+    "title": "About - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Creating Experiences That Are Growth-Driven",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section about",
+        "id": "",
+        "textSample": "Creating Experiences That Are Growth-DrivenAt HyperFrame, we craft websites and digital experiences that combine creativity, usability, and "
+      },
+      {
+        "tag": "section",
+        "className": "section story",
+        "id": "",
+        "textSample": "{About Us }The Story Behind HyperFrameOur cross-functional teams work together to achieve outstanding portfolios across all the digital chan"
+      },
+      {
+        "tag": "section",
+        "className": "section value",
+        "id": "",
+        "textSample": "{Our Core Values}The Heart of HyperFrameThe principles that shape how we think, design, and deliver — ensuring every project creates lasting"
+      },
+      {
+        "tag": "section",
+        "className": "section awwards",
+        "id": "",
+        "textSample": "{Awwwards}Our AchievementsGreat design is about more than just visuals — it’s about crafting meaningful experiences that lead to tangible re"
+      },
+      {
+        "tag": "section",
+        "className": "section stories",
+        "id": "",
+        "textSample": "{Success Stories}Stories That Speak For ThemselvesGreat design is about more than just visuals — it’s about crafting meaningful experiences "
+      },
+      {
+        "tag": "section",
+        "className": "section team",
+        "id": "",
+        "textSample": "{Team Members}Meet Our TeamGreat design is about more than just visuals it’s about crafting meaningful experiences that lead to tangible res"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/service",
+    "localRoute": "/service",
+    "title": "Service - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Grow Your Business with Our Services",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/service/ui-ux-design",
+      "/service/illustration-design",
+      "/service/no-code-development",
+      "/service/custom-development",
+      "/project/profast",
+      "/project/securex",
+      "/project/spinex-pro",
+      "/project/virtualex",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section project",
+        "id": "",
+        "textSample": "Grow Your Business with Our ServicesAt HyperFrame, our UI/UX design turns ideas into engaging, user-friendly digital products that inspire a"
+      },
+      {
+        "tag": "section",
+        "className": "section choose",
+        "id": "",
+        "textSample": "{Why Choose Us}Why Brands Trust UsGreat design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section testimonial",
+        "id": "",
+        "textSample": "{Testimonials}What Our Client SayOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels."
+      },
+      {
+        "tag": "section",
+        "className": "section feature",
+        "id": "",
+        "textSample": "{Featured Projects}Our Recent WorkOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels"
+      },
+      {
+        "tag": "section",
+        "className": "section pricing",
+        "id": "",
+        "textSample": "{Pricing Plans}What Our Client SayOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels"
+      },
+      {
+        "tag": "section",
+        "className": "section faq",
+        "id": "",
+        "textSample": "{FAQs}Frequently Asked QuestionsOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels.1"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/project",
+    "localRoute": "/project",
+    "title": "Project - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Our Work, Your Vision Realized",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/project/profast",
+      "/project/securex",
+      "/project/spinex-pro",
+      "/project/virtualex",
+      "/project/fashionable",
+      "/project/co-brand",
+      "/service/branding",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section project-b",
+        "id": "",
+        "textSample": "Our Work, Your Vision RealizedTake a look at our latest creative projects for brands with big ideas.(001)ProFastWe have worked with companie"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/blog",
+    "localRoute": "/blog",
+    "title": "Blog - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Insights and Ideas for Digital Growth",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/blog/the-5-important-trend-in-website-design",
+      "/blog/5-website-design-trends-to-watch",
+      "/blog/how-to-create-a-design-systems",
+      "/blog/20-useful-prompt-for-webflow",
+      "/blog/top-5-webflow-features-in-2025",
+      "/blog/how-colors-layouts-influence-users",
+      "/blog/how-to-balance-creativity-strategy",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section inner contact",
+        "id": "",
+        "textSample": "Insights and Ideas for Digital GrowthStay ahead of the curve with expert insights on design, strategy, and technology. Uncover tips, case st"
+      },
+      {
+        "tag": "section",
+        "className": "section blog",
+        "id": "",
+        "textSample": "{Our Blogs & Insights}Browse All BlogsLearn MoreLearn More(002)September 22, 20265 Website Design Trends to WatchDiscover the newest digital"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/contact",
+    "localRoute": "/contact",
+    "title": "Contact - Hyperframe Webflow HTML Website Template",
+    "status": 0,
+    "h1": "Let’s Work Together!",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section inner contact",
+        "id": "",
+        "textSample": "Let’s Work Together!We’d love to hear from you! Whether launching a new project, seeking design support, or just saying hello, our team is h"
+      },
+      {
+        "tag": "section",
+        "className": "section faq",
+        "id": "",
+        "textSample": "{FAQs}Frequently Asked QuestionsOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels.1"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/style-guide",
+    "localRoute": "/style-guide",
+    "title": "Style Guide - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Style Guide",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section inner style",
+        "id": "",
+        "textSample": "Style GuideWe use Figma’s local styles to standardize colors, typography, and components ensuring consistency, scalability, and easy mainten"
+      },
+      {
+        "tag": "section",
+        "className": "section style",
+        "id": "",
+        "textSample": "Colors StyleBrand ColorPrimary Color#FF4C03Text ColorsTitle Dark#FF4C03Title White#FFFFFF Paragraph Dark#676E80Paragraph Grey#E1E2E5Backgrou"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/privacy",
+    "localRoute": "/privacy",
+    "title": "Privacy - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Privacy Policy",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section inner changelog",
+        "id": "",
+        "textSample": "Privacy PolicyAt HyperFrame, your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information"
+      },
+      {
+        "tag": "section",
+        "className": "section privacy",
+        "id": "",
+        "textSample": "Information We CollectInformation You Provide:Name, email address, company details, or payment information when you register or subscribe.Me"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/licenses",
+    "localRoute": "/licenses",
+    "title": "Licenses - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Licenses",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section inner style",
+        "id": "",
+        "textSample": "LicensesAll graphical assets in this template are licensed for personal and commercial use. If you'd like to use a specific asset, please ch"
+      },
+      {
+        "tag": "section",
+        "className": "section license",
+        "id": "",
+        "textSample": "PhotographyPhotos come from Unsplash and Lummi and are free for personal and commercial use under the licenses below. The people photos (tea"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/changelog",
+    "localRoute": "/changelog",
+    "title": "Changelog - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Changelog",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section inner changelog",
+        "id": "",
+        "textSample": "ChangelogYou can find information about all versions here.Back To HomeBack To HomeVersion 1.01.0 Initial Version Released With Hyper Frame A"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/instructions",
+    "localRoute": "/instructions",
+    "title": "Instructions - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Instructions",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section instructions",
+        "id": "",
+        "textSample": "Instructions1. Element MapSmooth Scroll (Lenis)‍- Where: All pages, desktop only (screens 768px and wider)- Target: The whole page, no eleme"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/password",
+    "localRoute": "/password",
+    "title": "404 - Hyperframe Webflow HTML Website Template",
+    "status": 404,
+    "h1": "Page Not Found! 👀",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section inner _404",
+        "id": "",
+        "textSample": "Page Not Found! 👀Maybe it’s hiding in another dimension or someone trained the model wrong.Back To HomepageBack To Homepage"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/404",
+    "localRoute": "/404",
+    "title": "404 - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Page Not Found! 👀",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section inner _404",
+        "id": "",
+        "textSample": "Page Not Found! 👀Maybe it’s hiding in another dimension or someone trained the model wrong.Back To HomepageBack To Homepage"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/project/profast",
+    "localRoute": "/project/profast",
+    "title": "ProFast - Hyperframe",
+    "status": 200,
+    "h1": "ProFast",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section project-single",
+        "id": "",
+        "textSample": "Back to ProjectsBack to ProjectsProFast{Projects Overview}Year2025Industry/Website DesignerScope of work/ Branding / Web designTimeline12 we"
+      },
+      {
+        "tag": "section",
+        "className": "section challenge",
+        "id": "",
+        "textSample": "{The Challenge}ProFast had outgrown its first website. Pages loaded slowly, the brand looked different on every channel, and visitors left b"
+      },
+      {
+        "tag": "section",
+        "className": "section approach",
+        "id": "",
+        "textSample": "{Our Approach}How We Approach the SituationWe rebuilt ProFast around speed and clarity: a sharper identity, a lighter site and a product jou"
+      },
+      {
+        "tag": "section",
+        "className": "section final",
+        "id": "",
+        "textSample": "{The Final Results}Numbers and Experience Drive SuccessThe principles that guide our thinking, design, and delivery to ensure lasting impact"
+      },
+      {
+        "tag": "section",
+        "className": "section testimonial",
+        "id": "",
+        "textSample": "{Testimonials}What Our Client SayOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels."
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/project/securex",
+    "localRoute": "/project/securex",
+    "title": "SecureX - Hyperframe",
+    "status": 200,
+    "h1": "SecureX",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section project-single",
+        "id": "",
+        "textSample": "Back to ProjectsBack to ProjectsSecureX{Projects Overview}Year2025Industry/Website DesignerScope of work/ Branding / Web designTimeline12 we"
+      },
+      {
+        "tag": "section",
+        "className": "section challenge",
+        "id": "",
+        "textSample": "{The Challenge}SecureX offered strong security features, but its old site buried them under technical jargon. Prospects did not trust the br"
+      },
+      {
+        "tag": "section",
+        "className": "section approach",
+        "id": "",
+        "textSample": "{Our Approach}How We Approach the SituationWe turned complex security features into plain benefits, then wrapped them in a calm, trustworthy"
+      },
+      {
+        "tag": "section",
+        "className": "section final",
+        "id": "",
+        "textSample": "{The Final Results}Numbers and Experience Drive SuccessThe principles that guide our thinking, design, and delivery to ensure lasting impact"
+      },
+      {
+        "tag": "section",
+        "className": "section testimonial",
+        "id": "",
+        "textSample": "{Testimonials}What Our Client SayOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels."
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/project/spinex-pro",
+    "localRoute": "/project/spinex-pro",
+    "title": "Spinex Pro - Hyperframe",
+    "status": 200,
+    "h1": "Spinex Pro",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section project-single",
+        "id": "",
+        "textSample": "Back to ProjectsBack to ProjectsSpinex Pro{Projects Overview}Year2025Industry/Website DesignerScope of work/ Branding / Web designTimeline12"
+      },
+      {
+        "tag": "section",
+        "className": "section challenge",
+        "id": "",
+        "textSample": "{The Challenge}Spinex Pro launched a powerful product with a confusing story. Each team described it differently, the website listed feature"
+      },
+      {
+        "tag": "section",
+        "className": "section approach",
+        "id": "",
+        "textSample": "{Our Approach}How We Approach the SituationWe started with one clear product story, then shaped the brand, website and icons around it so ev"
+      },
+      {
+        "tag": "section",
+        "className": "section final",
+        "id": "",
+        "textSample": "{The Final Results}Numbers and Experience Drive SuccessThe principles that guide our thinking, design, and delivery to ensure lasting impact"
+      },
+      {
+        "tag": "section",
+        "className": "section testimonial",
+        "id": "",
+        "textSample": "{Testimonials}What Our Client SayOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels."
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/service/branding",
+    "localRoute": "/service/branding",
+    "title": "Branding - Hyperframe",
+    "status": 200,
+    "h1": "Branding",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/project/profast",
+      "/project/securex",
+      "/project/spinex-pro",
+      "/project/virtualex",
+      "/service/branding",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section service-single",
+        "id": "",
+        "textSample": "Back to ServicesBack to ServicesBrandingAt HyperFrame, our UI/UX design turns ideas into engaging, user-friendly digital products that inspi"
+      },
+      {
+        "tag": "section",
+        "className": "section offer",
+        "id": "",
+        "textSample": "{What We Offer}What's Included in This ServiceThe principles that guide our thinking, design, and delivery to ensure lasting impact.(001)UX "
+      },
+      {
+        "tag": "section",
+        "className": "section process-b",
+        "id": "",
+        "textSample": "{Our Work Process}A HyperFrame Project's Work ProcessOur cross-functional teams work together to achieve outstanding portfolios across all t"
+      },
+      {
+        "tag": "section",
+        "className": "section feature",
+        "id": "",
+        "textSample": "{Featured Projects}Our Recent WorkOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels"
+      },
+      {
+        "tag": "section",
+        "className": "section faq",
+        "id": "",
+        "textSample": "{FAQs}Frequently Asked QuestionsOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels.1"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/service/ui-ux-design",
+    "localRoute": "/service/ui-ux-design",
+    "title": "UI & UX Design - Hyperframe",
+    "status": 200,
+    "h1": "UI & UX Design",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/project/profast",
+      "/project/securex",
+      "/project/spinex-pro",
+      "/project/virtualex",
+      "/service/branding",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section service-single",
+        "id": "",
+        "textSample": "Back to ServicesBack to ServicesUI & UX DesignAt HyperFrame, our UI/UX design turns ideas into engaging, user-friendly digital products that"
+      },
+      {
+        "tag": "section",
+        "className": "section offer",
+        "id": "",
+        "textSample": "{What We Offer}What's Included in This ServiceThe principles that guide our thinking, design, and delivery to ensure lasting impact.(001)UX "
+      },
+      {
+        "tag": "section",
+        "className": "section process-b",
+        "id": "",
+        "textSample": "{Our Work Process}A HyperFrame Project's Work ProcessOur cross-functional teams work together to achieve outstanding portfolios across all t"
+      },
+      {
+        "tag": "section",
+        "className": "section feature",
+        "id": "",
+        "textSample": "{Featured Projects}Our Recent WorkOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels"
+      },
+      {
+        "tag": "section",
+        "className": "section faq",
+        "id": "",
+        "textSample": "{FAQs}Frequently Asked QuestionsOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels.1"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/service/illustration-design",
+    "localRoute": "/service/illustration-design",
+    "title": "Illustration Design - Hyperframe",
+    "status": 200,
+    "h1": "Illustration Design",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/project/profast",
+      "/project/securex",
+      "/project/spinex-pro",
+      "/project/virtualex",
+      "/service/branding",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section service-single",
+        "id": "",
+        "textSample": "Back to ServicesBack to ServicesIllustration DesignAt HyperFrame, our UI/UX design turns ideas into engaging, user-friendly digital products"
+      },
+      {
+        "tag": "section",
+        "className": "section offer",
+        "id": "",
+        "textSample": "{What We Offer}What's Included in This ServiceThe principles that guide our thinking, design, and delivery to ensure lasting impact.(001)UX "
+      },
+      {
+        "tag": "section",
+        "className": "section process-b",
+        "id": "",
+        "textSample": "{Our Work Process}A HyperFrame Project's Work ProcessOur cross-functional teams work together to achieve outstanding portfolios across all t"
+      },
+      {
+        "tag": "section",
+        "className": "section feature",
+        "id": "",
+        "textSample": "{Featured Projects}Our Recent WorkOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels"
+      },
+      {
+        "tag": "section",
+        "className": "section faq",
+        "id": "",
+        "textSample": "{FAQs}Frequently Asked QuestionsOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels.1"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/service/no-code-development",
+    "localRoute": "/service/no-code-development",
+    "title": "No Code Development - Hyperframe",
+    "status": 200,
+    "h1": "No Code Development",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/project/profast",
+      "/project/securex",
+      "/project/spinex-pro",
+      "/project/virtualex",
+      "/service/branding",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section service-single",
+        "id": "",
+        "textSample": "Back to ServicesBack to ServicesNo Code DevelopmentAt HyperFrame, our UI/UX design turns ideas into engaging, user-friendly digital products"
+      },
+      {
+        "tag": "section",
+        "className": "section offer",
+        "id": "",
+        "textSample": "{What We Offer}What's Included in This ServiceThe principles that guide our thinking, design, and delivery to ensure lasting impact.(001)UX "
+      },
+      {
+        "tag": "section",
+        "className": "section process-b",
+        "id": "",
+        "textSample": "{Our Work Process}A HyperFrame Project's Work ProcessOur cross-functional teams work together to achieve outstanding portfolios across all t"
+      },
+      {
+        "tag": "section",
+        "className": "section feature",
+        "id": "",
+        "textSample": "{Featured Projects}Our Recent WorkOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels"
+      },
+      {
+        "tag": "section",
+        "className": "section faq",
+        "id": "",
+        "textSample": "{FAQs}Frequently Asked QuestionsOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels.1"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/service/custom-development",
+    "localRoute": "/service/custom-development",
+    "title": "Custom Development - Hyperframe",
+    "status": 200,
+    "h1": "Custom Development",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/project/profast",
+      "/project/securex",
+      "/project/spinex-pro",
+      "/project/virtualex",
+      "/service/branding",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section service-single",
+        "id": "",
+        "textSample": "Back to ServicesBack to ServicesCustom DevelopmentAt HyperFrame, our UI/UX design turns ideas into engaging, user-friendly digital products "
+      },
+      {
+        "tag": "section",
+        "className": "section offer",
+        "id": "",
+        "textSample": "{What We Offer}What's Included in This ServiceThe principles that guide our thinking, design, and delivery to ensure lasting impact.(001)UX "
+      },
+      {
+        "tag": "section",
+        "className": "section process-b",
+        "id": "",
+        "textSample": "{Our Work Process}A HyperFrame Project's Work ProcessOur cross-functional teams work together to achieve outstanding portfolios across all t"
+      },
+      {
+        "tag": "section",
+        "className": "section feature",
+        "id": "",
+        "textSample": "{Featured Projects}Our Recent WorkOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels"
+      },
+      {
+        "tag": "section",
+        "className": "section faq",
+        "id": "",
+        "textSample": "{FAQs}Frequently Asked QuestionsOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels.1"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/blog/5-website-design-trends-to-watch",
+    "localRoute": "/blog/5-website-design-trends-to-watch",
+    "title": "5 Website Design Trends to Watch - Hyperframe",
+    "status": 200,
+    "h1": "5 Website Design Trends to Watch",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section blog-single",
+        "id": "",
+        "textSample": "Back to BlogsBack to Blogs5 Website Design Trends to WatchDiscover the newest digital design trends shaping this year's landscape and see ho"
+      },
+      {
+        "tag": "section",
+        "className": "section blog-rich",
+        "id": "",
+        "textSample": "IntroductionIn today’s fast-moving digital world, a website or app is often the first interaction users have with your brand. The truth? Peo"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/blog/how-to-create-a-design-systems",
+    "localRoute": "/blog/how-to-create-a-design-systems",
+    "title": "How to Create a Design Systems - Hyperframe",
+    "status": 200,
+    "h1": "How to Create a Design Systems",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section blog-single",
+        "id": "",
+        "textSample": "Back to BlogsBack to BlogsHow to Create a Design SystemsLearn why design isn’t just about looks it’s about creating seamless user journeys t"
+      },
+      {
+        "tag": "section",
+        "className": "section blog-rich",
+        "id": "",
+        "textSample": "IntroductionIn today’s fast-moving digital world, a website or app is often the first interaction users have with your brand. The truth? Peo"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/401",
+    "localRoute": "/401",
+    "title": "401 - Hyperframe Webflow HTML Website Template",
+    "status": 200,
+    "h1": "Protected Page",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/project/virtualex",
+    "localRoute": "/project/virtualex",
+    "title": "Virtualex - Hyperframe",
+    "status": 200,
+    "h1": "Virtualex",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section project-single",
+        "id": "",
+        "textSample": "Back to ProjectsBack to ProjectsVirtualex{Projects Overview}Year2025Industry/Website DesignerScope of work/ Branding / Web designTimeline12 "
+      },
+      {
+        "tag": "section",
+        "className": "section challenge",
+        "id": "",
+        "textSample": "{The Challenge}Virtualex builds immersive VR experiences, but its flat, text-heavy website failed to show that. Visitors could not picture t"
+      },
+      {
+        "tag": "section",
+        "className": "section approach",
+        "id": "",
+        "textSample": "{Our Approach}How We Approach the SituationWe let the product lead: bold visuals, motion and custom illustration give visitors a taste of th"
+      },
+      {
+        "tag": "section",
+        "className": "section final",
+        "id": "",
+        "textSample": "{The Final Results}Numbers and Experience Drive SuccessThe principles that guide our thinking, design, and delivery to ensure lasting impact"
+      },
+      {
+        "tag": "section",
+        "className": "section testimonial",
+        "id": "",
+        "textSample": "{Testimonials}What Our Client SayOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels."
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/project/fashionable",
+    "localRoute": "/project/fashionable",
+    "title": "Fashionable - Hyperframe",
+    "status": 200,
+    "h1": "Fashionable",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section project-single",
+        "id": "",
+        "textSample": "Back to ProjectsBack to ProjectsFashionable{Projects Overview}Year2025Industry/Website DesignerScope of work/ Branding / Web designTimeline1"
+      },
+      {
+        "tag": "section",
+        "className": "section challenge",
+        "id": "",
+        "textSample": "{The Challenge}Fashionable had a loyal in-store following but a dated online presence. Product photos were inconsistent, mobile shopping fel"
+      },
+      {
+        "tag": "section",
+        "className": "section approach",
+        "id": "",
+        "textSample": "{Our Approach}How We Approach the SituationWe brought the in-store energy online with a confident brand system, consistent product imagery a"
+      },
+      {
+        "tag": "section",
+        "className": "section final",
+        "id": "",
+        "textSample": "{The Final Results}Numbers and Experience Drive SuccessThe principles that guide our thinking, design, and delivery to ensure lasting impact"
+      },
+      {
+        "tag": "section",
+        "className": "section testimonial",
+        "id": "",
+        "textSample": "{Testimonials}What Our Client SayOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels."
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/project/co-brand",
+    "localRoute": "/project/co-brand",
+    "title": "Co Brand - Hyperframe",
+    "status": 200,
+    "h1": "Co Brand",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section project-single",
+        "id": "",
+        "textSample": "Back to ProjectsBack to ProjectsCo Brand{Projects Overview}Year2025Industry/Website DesignerScope of work/ Branding / Web designTimeline12 w"
+      },
+      {
+        "tag": "section",
+        "className": "section challenge",
+        "id": "",
+        "textSample": "{The Challenge}Two brands joined forces for Co Brand and needed one shared identity. Each partner had its own colors, tone and audience, and"
+      },
+      {
+        "tag": "section",
+        "className": "section approach",
+        "id": "",
+        "textSample": "{Our Approach}How We Approach the SituationWe found the common ground between both partners and built a shared identity, voice and website t"
+      },
+      {
+        "tag": "section",
+        "className": "section final",
+        "id": "",
+        "textSample": "{The Final Results}Numbers and Experience Drive SuccessThe principles that guide our thinking, design, and delivery to ensure lasting impact"
+      },
+      {
+        "tag": "section",
+        "className": "section testimonial",
+        "id": "",
+        "textSample": "{Testimonials}What Our Client SayOur cross-functional teams work together to achieve outstanding portfolios across all the digital channels."
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/blog/the-5-important-trend-in-website-design",
+    "localRoute": "/blog/the-5-important-trend-in-website-design",
+    "title": "The 5 important trend in website design - Hyperframe",
+    "status": 200,
+    "h1": "The 5 important trend in website design",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section blog-single",
+        "id": "",
+        "textSample": "Back to BlogsBack to BlogsThe 5 important trend in website designDiscover the newest digital design trends shaping this year's landscape and"
+      },
+      {
+        "tag": "section",
+        "className": "section blog-rich",
+        "id": "",
+        "textSample": "IntroductionIn today’s fast-moving digital world, a website or app is often the first interaction users have with your brand. The truth? Peo"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/blog/20-useful-prompt-for-webflow",
+    "localRoute": "/blog/20-useful-prompt-for-webflow",
+    "title": "20+ Useful Prompt For Webflow - Hyperframe",
+    "status": 200,
+    "h1": "20+ Useful Prompt For Webflow",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section blog-single",
+        "id": "",
+        "textSample": "Back to BlogsBack to Blogs20+ Useful Prompt For WebflowDiscover the newest digital design trends shaping this year's landscape and see how t"
+      },
+      {
+        "tag": "section",
+        "className": "section blog-rich",
+        "id": "",
+        "textSample": "IntroductionIn today’s fast-moving digital world, a website or app is often the first interaction users have with your brand. The truth? Peo"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/blog/top-5-webflow-features-in-2025",
+    "localRoute": "/blog/top-5-webflow-features-in-2025",
+    "title": "Top 5 Webflow Features in 2025 - Hyperframe",
+    "status": 200,
+    "h1": "Top 5 Webflow Features in 2025",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section blog-single",
+        "id": "",
+        "textSample": "Back to BlogsBack to BlogsTop 5 Webflow Features in 2025Learn why design isn’t just about looks it’s about creating seamless user journeys t"
+      },
+      {
+        "tag": "section",
+        "className": "section blog-rich",
+        "id": "",
+        "textSample": "IntroductionIn today’s fast-moving digital world, a website or app is often the first interaction users have with your brand. The truth? Peo"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/blog/how-colors-layouts-influence-users",
+    "localRoute": "/blog/how-colors-layouts-influence-users",
+    "title": "How Colors & Layouts Influence Users - Hyperframe",
+    "status": 200,
+    "h1": "How Colors & Layouts Influence Users",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section blog-single",
+        "id": "",
+        "textSample": "Back to BlogsBack to BlogsHow Colors & Layouts Influence UsersDiscover the newest digital design trends shaping this year's landscape and se"
+      },
+      {
+        "tag": "section",
+        "className": "section blog-rich",
+        "id": "",
+        "textSample": "IntroductionIn today’s fast-moving digital world, a website or app is often the first interaction users have with your brand. The truth? Peo"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  },
+  {
+    "referenceUrl": "https://hyperframe-template.webflow.io/blog/how-to-balance-creativity-strategy",
+    "localRoute": "/blog/how-to-balance-creativity-strategy",
+    "title": "How to Balance Creativity & Strategy - Hyperframe",
+    "status": 200,
+    "h1": "How to Balance Creativity & Strategy",
+    "links": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/blog",
+      "/contact",
+      "/service/branding",
+      "/project/spinex-pro",
+      "/style-guide",
+      "/licenses",
+      "/changelog",
+      "/privacy",
+      "/instructions",
+      "/404",
+      "/401"
+    ],
+    "sections": [
+      {
+        "tag": "section",
+        "className": "section blog-single",
+        "id": "",
+        "textSample": "Back to BlogsBack to BlogsHow to Balance Creativity & StrategyLearn why design isn’t just about looks it’s about creating seamless user jour"
+      },
+      {
+        "tag": "section",
+        "className": "section blog-rich",
+        "id": "",
+        "textSample": "IntroductionIn today’s fast-moving digital world, a website or app is often the first interaction users have with your brand. The truth? Peo"
+      },
+      {
+        "tag": "section",
+        "className": "section cta",
+        "id": "",
+        "textSample": "{Contact Us}Have Any Project Idea?Great design is about more than just visuals — it’s about crafting meaningful experiences that lead to tan"
+      },
+      {
+        "tag": "section",
+        "className": "section footer",
+        "id": "",
+        "textSample": "Stay Connected With UsYou're subscribed! Look out for fresh design insights from HyperFrame in your inbox.We couldn't add your email. Please"
+      }
+    ]
+  }
+]

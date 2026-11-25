@@ -1,0 +1,119 @@
+/* HyperFrame Typography Scale — Verified against Style Guide & Reference CSS */
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-m);
+  line-height: var(--lh-xl);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-title-dark);
+  background-color: var(--color-background-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, .typo-h1 {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--text-h1);
+  line-height: var(--lh-s);
+  font-weight: var(--font-weight-semi-bold);
+  letter-spacing: var(--ls-3xl);
+}
+
+h2, .typo-h2 {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--text-h2);
+  line-height: var(--lh-s);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--ls-2xl);
+  color: var(--color-title-dark);
+}
+
+h3, .typo-h3 {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--text-h3);
+  line-height: var(--lh-m);
+  font-weight: var(--font-weight-semi-bold);
+  letter-spacing: var(--ls-l);
+}
+
+h4, .typo-h4 {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--text-h4);
+  line-height: var(--lh-l);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--ls-s);
+  color: var(--color-title-dark);
+}
+
+h5, .typo-h5 {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--text-h5);
+  line-height: var(--lh-l);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--ls-xl);
+  color: var(--color-title-dark);
+}
+
+h6, .typo-h6 {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--text-h6);
+  line-height: var(--lh-l);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--ls-m);
+  color: var(--color-title-dark);
+}
+
+p {
+  margin: 0;
+  color: var(--color-paragraph-dark);
+}
+
+a {
+  color: var(--color-title-dark);
+  font-size: var(--text-l);
+  line-height: var(--lh-xl);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+}
+
+.para-xl {
+  font-size: var(--text-xl);
+  line-height: var(--lh-xl);
+}
+
+.para-l {
+  font-size: var(--text-l);
+  line-height: var(--lh-xl);
+}
+
+.para-m {
+  font-size: var(--text-m);
+  line-height: var(--lh-xl);
+}
+
+.para-s {
+  font-size: var(--text-s);
+  line-height: var(--lh-xl);
+}
+
+.hero-display-line-1 {
+  font-size: var(--text-h1);
+  line-height: var(--lh-s);
+  font-weight: var(--font-weight-semi-bold);
+  letter-spacing: var(--ls-3xl);
+  color: var(--white);
+}
+
+.hero-display-line-2 {
+  font-size: var(--text-big);
+  line-height: var(--lh-s);
+  font-weight: var(--font-weight-semi-bold);
+  letter-spacing: var(--ls-3xl);
+  color: var(--white);
+}

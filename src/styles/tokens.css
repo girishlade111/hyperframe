@@ -1,0 +1,258 @@
+/* HyperFrame Design Tokens — Extracted from Reference Computed Styles & Style Guide */
+
+@font-face {
+  font-family: 'InterDisplay';
+  src: url('/assets/fonts/InterDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterDisplay';
+  src: url('/assets/fonts/InterDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterDisplay';
+  src: url('/assets/fonts/InterDisplay-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Semantic Color Tokens */
+  --color-primary: #ff4c03;
+  --color-primary-hover: #e04200;
+  --color-background-dark: #03020b;
+  --color-background-black: #000000;
+  --color-background-white: #ffffff;
+  --color-background-gray: #f5f5f5;
+  --color-title-dark: #03020b;
+  --color-title-white: #ffffff;
+  --color-paragraph-dark: #676e80;
+  --color-paragraph-gray: #676e80;
+  --color-stroke-light: #e1e2e5;
+  --color-stroke-dark: #595959;
+  --color-button-gray: #f1f1f1;
+  --color-border-subtle: #ebedf0;
+  --color-status-available: #61c554;
+
+  /* Reference Token Aliases */
+  --white: var(--color-background-white);
+  --black: var(--color-background-black);
+  --balck-900: var(--color-background-dark);
+  --primary-color: var(--color-primary);
+  --gray-100: var(--color-background-gray);
+  --gray-200: var(--color-button-gray);
+  --gray-300: var(--color-border-subtle);
+  --gray-400: var(--color-stroke-light);
+  --gray-500: var(--color-paragraph-dark);
+  --gray-600: var(--color-stroke-dark);
+  --transparent: transparent;
+
+  /* Fonts */
+  --font-primary: 'InterDisplay', 'Inter', Arial, sans-serif;
+  --font-display-condensed: 'Bebas Neue', sans-serif;
+
+  /* Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+
+  /* Typography Scale (Desktop >= 992px) */
+  --text-big: 186px;
+  --text-h1: 140px;
+  --text-h2: 88px;
+  --text-h3: 60px;
+  --text-h4: 48px;
+  --text-h5: 40px;
+  --text-h6: 32px;
+  --text-xl: 20px;
+  --text-l: 18px;
+  --text-m: 16px;
+  --text-s: 14px;
+
+  /* Line Heights */
+  --lh-s: 100%;
+  --lh-m: 110%;
+  --lh-l: 120%;
+  --lh-xl: 150%;
+
+  /* Letter Spacing */
+  --ls-3xl: -5.6px;
+  --ls-2xl: -1.76px;
+  --ls-xl: -0.8px;
+  --ls-m: -0.64px;
+  --ls-l: -0.6px;
+  --ls-s: -0.48px;
+
+  /* Spacing & Gaps */
+  --gap-none: 0px;
+  --gap-s: 8px;
+  --gap-m: 12px;
+  --gap-l: 16px;
+  --gap-xl: 20px;
+  --gap-2xl: 24px;
+  --gap-3xl: 30px;
+  --gap-4xl: 32px;
+  --gap-5xl: 40px;
+  --gap-6xl: 48px;
+  --gap-7xl: 60px;
+  --gap-8xl: 80px;
+  --gap-9xl: 120px;
+  --gap-10xl: 140px;
+  --gap-11xl: 208px;
+
+  /* Sizing */
+  --container-max: 1172px;
+  --container-gutter: var(--gap-l);
+
+  /* Radii */
+  --radius-s: 12px;
+  --radius-m: 16px;
+  --radius-l: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 40px;
+  --radius-max: 999px;
+
+  /* Motion */
+  --duration-fast: 0.25s;
+  --duration-base: 0.4s;
+  --duration-slow: 0.7s;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --gap-none: 0px;
+    --gap-s: 8px;
+    --gap-m: 12px;
+    --gap-l: 15px;
+    --gap-xl: 15px;
+    --gap-2xl: 20px;
+    --gap-3xl: 25px;
+    --gap-4xl: 30px;
+    --gap-5xl: 35px;
+    --gap-6xl: 40px;
+    --gap-7xl: 50px;
+    --gap-8xl: 60px;
+    --gap-9xl: 100px;
+    --gap-10xl: 100px;
+    --gap-11xl: 160px;
+
+    --radius-s: 12px;
+    --radius-m: 16px;
+    --radius-l: 20px;
+    --radius-xl: 24px;
+    --radius-2xl: 24px;
+
+    --ls-3xl: -2px;
+    --ls-2xl: -1px;
+    --ls-xl: -0.3px;
+    --ls-m: -0.3px;
+    --ls-l: -0.3px;
+    --ls-s: -0.2px;
+
+    --text-big: 96px;
+    --text-h1: 96px;
+    --text-h2: 64px;
+    --text-h3: 48px;
+    --text-h4: 36px;
+    --text-h5: 34px;
+    --text-h6: 30px;
+    --text-xl: 20px;
+    --text-l: 18px;
+    --text-m: 16px;
+    --text-s: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --gap-none: 0px;
+    --gap-s: 8px;
+    --gap-m: 12px;
+    --gap-l: 15px;
+    --gap-xl: 15px;
+    --gap-2xl: 15px;
+    --gap-3xl: 20px;
+    --gap-4xl: 25px;
+    --gap-5xl: 30px;
+    --gap-6xl: 35px;
+    --gap-7xl: 40px;
+    --gap-8xl: 50px;
+    --gap-9xl: 80px;
+    --gap-10xl: 80px;
+    --gap-11xl: 140px;
+
+    --ls-3xl: -1.5px;
+    --ls-2xl: -0.6px;
+    --ls-xl: -0.3px;
+    --ls-m: -0.2px;
+    --ls-l: -0.2px;
+    --ls-s: -0.1px;
+
+    --text-big: 72px;
+    --text-h1: 72px;
+    --text-h2: 42px;
+    --text-h3: 36px;
+    --text-h4: 32px;
+    --text-h5: 30px;
+    --text-h6: 26px;
+    --text-xl: 18px;
+    --text-l: 18px;
+    --text-m: 16px;
+    --text-s: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  :root {
+    --gap-none: 0px;
+    --gap-s: 8px;
+    --gap-m: 12px;
+    --gap-l: 15px;
+    --gap-xl: 15px;
+    --gap-2xl: 15px;
+    --gap-3xl: 20px;
+    --gap-4xl: 25px;
+    --gap-5xl: 25px;
+    --gap-6xl: 30px;
+    --gap-7xl: 35px;
+    --gap-8xl: 40px;
+    --gap-9xl: 60px;
+    --gap-10xl: 60px;
+    --gap-11xl: 120px;
+
+    --radius-s: 10px;
+    --radius-m: 10px;
+    --radius-l: 10px;
+    --radius-xl: 15px;
+    --radius-2xl: 15px;
+
+    --ls-3xl: -1px;
+    --ls-2xl: -0.4px;
+    --ls-xl: -0.1px;
+    --ls-m: 0px;
+    --ls-l: -0.1px;
+    --ls-s: 0px;
+
+    --text-big: 54px;
+    --text-h1: 54px;
+    --text-h2: 36px;
+    --text-h3: 32px;
+    --text-h4: 30px;
+    --text-h5: 28px;
+    --text-h6: 24px;
+    --text-xl: 18px;
+    --text-l: 16px;
+    --text-m: 16px;
+    --text-s: 14px;
+  }
+}
