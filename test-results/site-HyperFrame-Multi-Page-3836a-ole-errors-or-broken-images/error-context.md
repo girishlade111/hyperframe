@@ -14,72 +14,13 @@
 ```
 Error: expect(received).toEqual(expected) // deep equality
 
-- Expected  -  1
-+ Received  + 63
+- Expected  - 1
++ Received  + 4
 
 - Array []
 + Array [
-+   "/assets/icons/linkedin-02.svg",
-+   "/assets/brand/Sponsor-Logo-03.svg",
-+   "/assets/brand/Sponsor-Logo-04.svg",
-+   "/assets/icons/Rotashow.svg",
-+   "/assets/brand/Sponsor-Logo-01.svg",
-+   "/assets/brand/Sponsor-Logo-02.svg",
-+   "/assets/brand/Sponsor-Logo-03.svg",
-+   "/assets/brand/Sponsor-Logo-04.svg",
-+   "/assets/icons/Service-Icon-01.svg",
-+   "/assets/icons/Service-Icon-01.svg",
-+   "/assets/icons/Service-Icon-01.svg",
-+   "/assets/images/services/Service-Image-01.avif",
-+   "/assets/images/services/Service-Image-02.avif",
-+   "/assets/images/services/Service-Image-03.avif",
-+   "/assets/images/services/6af4b298871cd9e06180d71d_Service-Image-04.webp",
-+   "/assets/images/services/Service-Image-05.avif",
-+   "/assets/images/services/Service-Image-06.avif",
-+   "/assets/images/services/Service-Image-07.avif",
-+   "/assets/images/services/Service-Image-08.avif",
-+   "/assets/images/services/Service-Image-09.avif",
-+   "/assets/images/services/Service-Image-10.avif",
-+   "/assets/icons/Stars.svg",
-+   "/assets/images/testimonials/Testimonial-Author-Image.avif",
-+   "/assets/icons/Stars.svg",
-+   "/assets/images/testimonials/Blog-Author-Image-1.avif",
-+   "/assets/icons/Stars.svg",
-+   "/assets/images/testimonials/Trusted-Image-04.avif",
-+   "/assets/icons/Stars.svg",
-+   "/assets/images/testimonials/Trusted-Image-03.avif",
 +   "/assets/icons/Stars.svg",
 +   "/assets/images/testimonials/Trusted-Image-02.avif",
-+   "/assets/brand/Logo-50.svg",
-+   "/assets/images/testimonials/Trusted-Image-01.avif",
-+   "/assets/images/testimonials/Trusted-Image-02.avif",
-+   "/assets/images/testimonials/Trusted-Image-03.avif",
-+   "/assets/images/testimonials/Trusted-Image-04.avif",
-+   "/assets/images/testimonials/Trusted-Image-05.avif",
-+   "/assets/icons/Stars.svg",
-+   "/assets/brand/Logo.svg",
-+   "/assets/icons/hf-content-block.svg",
-+   "/assets/icons/Pricing-Icon-01.svg",
-+   "/assets/icons/Orange-Check-Icon.svg",
-+   "/assets/icons/Orange-Check-Icon.svg",
-+   "/assets/icons/Orange-Check-Icon.svg",
-+   "/assets/icons/Orange-Check-Icon.svg",
-+   "/assets/icons/Pricing-Icon-02.svg",
-+   "/assets/icons/White-Check-Icon.svg",
-+   "/assets/icons/White-Check-Icon.svg",
-+   "/assets/icons/White-Check-Icon.svg",
-+   "/assets/icons/White-Check-Icon.svg",
-+   "/assets/images/process/Process-Image-01.avif",
-+   "/assets/images/process/Process-Image-02.avif",
-+   "/assets/images/process/Process-Image-03.avif",
-+   "/assets/images/process/Process-Image-04.avif",
-+   "/assets/images/process/Process-Image-05.avif",
-+   "/assets/icons/Stars.svg",
-+   "/assets/icons/Stars.svg",
-+   "/assets/icons/Stars.svg",
-+   "/assets/images/blog/Blog-Image-02.avif",
-+   "/assets/images/blog/Blog-Image-03.avif",
-+   "/assets/icons/linkedin-02.svg",
 + ]
 ```
 
@@ -89,7 +30,7 @@ Error: expect(received).toEqual(expected) // deep equality
 - generic [ref=e3]:
   - banner [ref=e4]:
     - generic [ref=e7]:
-      - generic [ref=e8]: "NEW YORK, USA { 01:54 AM }"
+      - generic [ref=e8]: "NEW YORK, USA { 02:01 AM }"
       - link "HyperFrame Home" [ref=e11] [cursor=pointer]:
         - /url: /
         - img "HyperFrame" [ref=e12]
@@ -194,21 +135,21 @@ Error: expect(received).toEqual(expected) // deep equality
         - generic [ref=e93]:
           - generic [ref=e94]:
             - generic [ref=e95]:
-              - generic [ref=e96]: "18"
+              - generic [ref=e96]: "24"
               - generic [ref=e97]: +
             - generic [ref=e99]:
               - generic [ref=e100]: Websites launched
               - generic [ref=e101]: Helping brands stand out online.
           - generic [ref=e102]:
             - generic [ref=e103]:
-              - generic [ref=e104]: 2.7M
+              - generic [ref=e104]: 3.7M
               - generic [ref=e105]: +
             - generic [ref=e107]:
               - generic [ref=e108]: Monthly visitors
               - generic [ref=e109]: Reached by the sites we built.
           - generic [ref=e110]:
             - generic [ref=e111]:
-              - generic [ref=e112]: "69"
+              - generic [ref=e112]: "94"
               - generic [ref=e113]: "%"
             - generic [ref=e115]:
               - generic [ref=e116]: Client retention
@@ -959,125 +900,135 @@ Error: expect(received).toEqual(expected) // deep equality
   49  |       await expect(page).not.toHaveTitle('');
   50  |       await expect(page.locator('header').first()).toBeVisible();
   51  | 
-  52  |       // Trigger lazy images by scrolling
+  52  |       // Incrementally scroll so every lazy-loaded image intersects the viewport and finishes decoding
   53  |       await page.evaluate(async () => {
-  54  |         window.scrollTo(0, document.body.scrollHeight);
-  55  |         await new Promise((r) => setTimeout(r, 250));
-  56  |         window.scrollTo(0, 0);
-  57  |       });
-  58  |       await page.waitForTimeout(250);
-  59  | 
-  60  |       const brokenImages = await page.evaluate(() => {
-  61  |         const imgs = Array.from(document.querySelectorAll('img'));
-  62  |         return imgs
-  63  |           .filter((img) => img.offsetParent !== null && (!img.complete || img.naturalWidth === 0))
-  64  |           .map((img) => img.getAttribute('src'));
-  65  |       });
-  66  | 
-  67  |       const overflow = await page.evaluate(() => {
-  68  |         return document.documentElement.scrollWidth > document.documentElement.clientWidth;
-  69  |       });
-  70  | 
-> 71  |       expect(brokenImages).toEqual([]);
-      |                            ^ Error: expect(received).toEqual(expected) // deep equality
-  72  |       expect(overflow).toBe(false);
-  73  |       expect(errors).toEqual([]);
-  74  |     });
-  75  |   }
+  54  |         const step = Math.max(450, Math.floor(window.innerHeight * 0.75));
+  55  |         for (let y = 0; y <= document.body.scrollHeight; y += step) {
+  56  |           window.scrollTo(0, y);
+  57  |           await new Promise((r) => setTimeout(r, 90));
+  58  |         }
+  59  |         window.scrollTo(0, document.body.scrollHeight);
+  60  |         await new Promise((r) => setTimeout(r, 250));
+  61  |         window.scrollTo(0, 0);
+  62  |       });
+  63  |       await page.waitForTimeout(400);
+  64  | 
+  65  |       const brokenImages = await page.evaluate(() => {
+  66  |         const imgs = Array.from(document.querySelectorAll('img'));
+  67  |         return imgs
+  68  |           .filter(
+  69  |             (img) =>
+  70  |               img.offsetParent !== null &&
+  71  |               !img.closest('[aria-hidden="true"]') &&
+  72  |               (!img.complete || img.naturalWidth === 0)
+  73  |           )
+  74  |           .map((img) => img.getAttribute('src'));
+  75  |       });
   76  | 
-  77  |   test('all CMS detail slugs render dynamic headings and are not 404', async ({ page }) => {
-  78  |     for (const slug of projectSlugs) {
-  79  |       await page.goto(`/project/${slug}`, { waitUntil: 'domcontentloaded' });
-  80  |       await expect(page.locator('h1').first()).not.toContainText('Page Not Found');
-  81  |     }
-  82  |     for (const slug of serviceSlugs) {
-  83  |       await page.goto(`/service/${slug}`, { waitUntil: 'domcontentloaded' });
-  84  |       await expect(page.locator('h1').first()).not.toContainText('Page Not Found');
-  85  |     }
-  86  |     for (const slug of blogSlugs) {
-  87  |       await page.goto(`/blog/${slug}`, { waitUntil: 'domcontentloaded' });
-  88  |       await expect(page.locator('h1').first()).not.toContainText('Page Not Found');
-  89  |     }
-  90  |   });
-  91  | 
-  92  |   test('unmatched route renders branded 404 page with Back To Homepage', async ({ page }) => {
-  93  |     await page.goto('/nonexistent-route-check', { waitUntil: 'domcontentloaded' });
-  94  |     await expect(page.locator('h1')).toContainText('Page Not Found!');
-  95  |     await page.getByRole('link', { name: 'Back To Homepage' }).click();
-  96  |     await expect(page).toHaveURL('/');
-  97  |   });
-  98  | });
-  99  | 
-  100 | test.describe('HyperFrame Interactive States & Forms', () => {
-  101 |   test('fullscreen menu opens, navigates, and closes via Escape with focus restore', async ({ page }) => {
-  102 |     await page.setViewportSize({ width: 1440, height: 900 });
-  103 |     await page.goto('/', { waitUntil: 'networkidle' });
-  104 | 
-  105 |     const menuToggle = page.getByRole('button', { name: /menu/i });
-  106 |     await expect(menuToggle).toHaveAttribute('aria-expanded', 'false');
-  107 |     await menuToggle.click();
-  108 |     await expect(menuToggle).toHaveAttribute('aria-expanded', 'true');
+  77  |       const overflow = await page.evaluate(() => {
+  78  |         return document.documentElement.scrollWidth > document.documentElement.clientWidth;
+  79  |       });
+  80  | 
+> 81  |       expect(brokenImages).toEqual([]);
+      |                            ^ Error: expect(received).toEqual(expected) // deep equality
+  82  |       expect(overflow).toBe(false);
+  83  |       expect(errors).toEqual([]);
+  84  |     });
+  85  |   }
+  86  | 
+  87  |   test('all CMS detail slugs render dynamic headings and are not 404', async ({ page }) => {
+  88  |     for (const slug of projectSlugs) {
+  89  |       await page.goto(`/project/${slug}`, { waitUntil: 'domcontentloaded' });
+  90  |       await expect(page.locator('h1').first()).not.toContainText('Page Not Found');
+  91  |     }
+  92  |     for (const slug of serviceSlugs) {
+  93  |       await page.goto(`/service/${slug}`, { waitUntil: 'domcontentloaded' });
+  94  |       await expect(page.locator('h1').first()).not.toContainText('Page Not Found');
+  95  |     }
+  96  |     for (const slug of blogSlugs) {
+  97  |       await page.goto(`/blog/${slug}`, { waitUntil: 'domcontentloaded' });
+  98  |       await expect(page.locator('h1').first()).not.toContainText('Page Not Found');
+  99  |     }
+  100 |   });
+  101 | 
+  102 |   test('unmatched route renders branded 404 page with Back To Homepage', async ({ page }) => {
+  103 |     await page.goto('/nonexistent-route-check', { waitUntil: 'domcontentloaded' });
+  104 |     await expect(page.locator('h1')).toContainText('Page Not Found!');
+  105 |     await page.getByRole('link', { name: 'Back To Homepage' }).click();
+  106 |     await expect(page).toHaveURL('/');
+  107 |   });
+  108 | });
   109 | 
-  110 |     const drawer = page.locator('.nav-menu.active');
-  111 |     await expect(drawer).toBeVisible();
-  112 | 
-  113 |     await page.keyboard.press('Escape');
-  114 |     await expect(menuToggle).toHaveAttribute('aria-expanded', 'false');
-  115 |     await expect(menuToggle).toBeFocused();
-  116 |   });
-  117 | 
-  118 |   test('services showcase expands on click/hover', async ({ page }) => {
-  119 |     await page.setViewportSize({ width: 1440, height: 900 });
-  120 |     await page.goto('/', { waitUntil: 'networkidle' });
-  121 | 
-  122 |     const firstServiceToggle = page.locator('.service-single-item button').first();
-  123 |     await firstServiceToggle.scrollIntoViewIfNeeded();
-  124 |     await firstServiceToggle.click();
-  125 |     await expect(firstServiceToggle).toHaveAttribute('aria-expanded', 'true');
+  110 | test.describe('HyperFrame Interactive States & Forms', () => {
+  111 |   test('fullscreen menu opens, navigates, and closes via Escape with focus restore', async ({ page }) => {
+  112 |     await page.setViewportSize({ width: 1440, height: 900 });
+  113 |     await page.goto('/', { waitUntil: 'networkidle' });
+  114 | 
+  115 |     const menuToggle = page.locator('button[aria-controls="fullscreen-nav-overlay"]');
+  116 |     await expect(menuToggle).toHaveAttribute('aria-expanded', 'false');
+  117 |     await menuToggle.click();
+  118 |     await expect(menuToggle).toHaveAttribute('aria-expanded', 'true');
+  119 | 
+  120 |     const drawer = page.locator('#fullscreen-nav-overlay.is-open');
+  121 |     await expect(drawer).toBeVisible();
+  122 | 
+  123 |     await page.keyboard.press('Escape');
+  124 |     await expect(menuToggle).toHaveAttribute('aria-expanded', 'false');
+  125 |     await expect(menuToggle).toBeFocused();
   126 |   });
   127 | 
-  128 |   test('testimonial slider prev and next controls switch slides', async ({ page }) => {
+  128 |   test('services showcase expands on click/hover', async ({ page }) => {
   129 |     await page.setViewportSize({ width: 1440, height: 900 });
   130 |     await page.goto('/', { waitUntil: 'networkidle' });
   131 | 
-  132 |     const slider = page.locator('.testimonials-slider, section.testimonials').first();
-  133 |     await slider.scrollIntoViewIfNeeded();
-  134 | 
-  135 |     const quoteLocator = page.locator('.testimonials-quote, .testimonial-quote, .slider-quote').first();
-  136 |     const initialQuote = await quoteLocator.textContent();
+  132 |     const firstServiceToggle = page.locator('.service-card-top-wrap').first();
+  133 |     await firstServiceToggle.scrollIntoViewIfNeeded();
+  134 |     await firstServiceToggle.click();
+  135 |     await expect(firstServiceToggle).toHaveAttribute('aria-expanded', 'true');
+  136 |   });
   137 | 
-  138 |     await page.getByRole('button', { name: /next/i }).click();
-  139 |     await expect(quoteLocator).not.toHaveText(initialQuote || '');
-  140 | 
-  141 |     await page.getByRole('button', { name: /previous/i }).click();
-  142 |     await expect(quoteLocator).toHaveText(initialQuote || '');
-  143 |   });
+  138 |   test('testimonial slider prev and next controls switch slides', async ({ page }) => {
+  139 |     await page.setViewportSize({ width: 1440, height: 900 });
+  140 |     await page.goto('/', { waitUntil: 'networkidle' });
+  141 | 
+  142 |     const track = page.locator('.testimonial-slider-track');
+  143 |     await track.scrollIntoViewIfNeeded();
   144 | 
-  145 |   test('pricing Add Development switch updates plan prices', async ({ page }) => {
-  146 |     await page.setViewportSize({ width: 1440, height: 900 });
-  147 |     await page.goto('/', { waitUntil: 'networkidle' });
-  148 | 
-  149 |     const pricingSection = page.locator('section.pricing').first();
-  150 |     await pricingSection.scrollIntoViewIfNeeded();
-  151 | 
-  152 |     await expect(pricingSection).toContainText('$1,999');
-  153 |     await expect(pricingSection).toContainText('$4,999');
+  145 |     const styleBefore = await track.getAttribute('style');
+  146 |     await page.getByRole('button', { name: 'Next testimonial' }).click();
+  147 |     const styleAfterNext = await track.getAttribute('style');
+  148 |     expect(styleAfterNext).not.toBe(styleBefore);
+  149 | 
+  150 |     await page.getByRole('button', { name: 'Previous testimonial' }).click();
+  151 |     const styleAfterPrev = await track.getAttribute('style');
+  152 |     expect(styleAfterPrev).toBe(styleBefore);
+  153 |   });
   154 | 
-  155 |     const toggle = pricingSection.getByRole('switch').first();
-  156 |     await toggle.click();
-  157 |     await expect(pricingSection).toContainText('$5,499');
-  158 |   });
-  159 | 
-  160 |   test('contact form validates required inputs and submits local preview cleanly', async ({ page }) => {
-  161 |     await page.setViewportSize({ width: 1440, height: 900 });
-  162 |     await page.goto('/contact', { waitUntil: 'networkidle' });
-  163 | 
-  164 |     await page.getByRole('button', { name: /submit|send/i }).click();
-  165 |     await expect(page.locator('form').first()).toContainText('Please enter your full name.');
-  166 | 
-  167 |     await page.locator('input[name="fullName"]').fill('Alex Mercer');
-  168 |     await page.locator('input[name="company"]').fill('ProFast Labs');
-  169 |     await page.locator('input[name="email"]').fill('alex@example.com');
-  170 |     await page.locator('textarea[name="message"]').fill('Looking to redesign our SaaS platform.');
-  171 |     await page.locator('input[type="checkbox"]').check();
+  155 |   test('pricing Add Development switch updates plan prices', async ({ page }) => {
+  156 |     await page.setViewportSize({ width: 1440, height: 900 });
+  157 |     await page.goto('/', { waitUntil: 'networkidle' });
+  158 | 
+  159 |     const pricingWrap = page.locator('.pricing-wrap').first();
+  160 |     await pricingWrap.scrollIntoViewIfNeeded();
+  161 | 
+  162 |     await expect(pricingWrap).toContainText('$1,999');
+  163 |     await expect(pricingWrap).toContainText('$4,999');
+  164 | 
+  165 |     const toggle = pricingWrap.getByRole('switch').first();
+  166 |     await toggle.click();
+  167 |     await expect(toggle).toHaveAttribute('aria-checked', 'true');
+  168 |     await expect(pricingWrap).toContainText('$5,499');
+  169 |   });
+  170 | 
+  171 |   test('contact form validates required inputs and submits local preview cleanly', async ({ page }) => {
+  172 |     await page.setViewportSize({ width: 1440, height: 900 });
+  173 |     await page.goto('/contact', { waitUntil: 'networkidle' });
+  174 | 
+  175 |     await page.getByRole('button', { name: 'Send Message' }).click();
+  176 |     await expect(page.locator('form').first()).toContainText('Please enter your full name.');
+  177 | 
+  178 |     await page.locator('#fullName').fill('Alex Mercer');
+  179 |     await page.locator('#company').fill('ProFast Labs');
+  180 |     await page.locator('#email').fill('alex@example.com');
+  181 |     await page.locator('#message').fill('Looking to redesign our SaaS platform.');
 ```
