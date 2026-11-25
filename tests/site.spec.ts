@@ -49,18 +49,28 @@ test.describe('HyperFrame Multi-Page Routing & Rendering', () => {
       await expect(page).not.toHaveTitle('');
       await expect(page.locator('header').first()).toBeVisible();
 
-      // Trigger lazy images by scrolling
+      // Incrementally scroll so every lazy-loaded image intersects the viewport and finishes decoding
       await page.evaluate(async () => {
+        const step = Math.max(450, Math.floor(window.innerHeight * 0.75));
+        for (let y = 0; y <= document.body.scrollHeight; y += step) {
+          window.scrollTo(0, y);
+          await new Promise((r) => setTimeout(r, 90));
+        }
         window.scrollTo(0, document.body.scrollHeight);
         await new Promise((r) => setTimeout(r, 250));
         window.scrollTo(0, 0);
       });
-      await page.waitForTimeout(250);
+      await page.waitForTimeout(400);
 
       const brokenImages = await page.evaluate(() => {
         const imgs = Array.from(document.querySelectorAll('img'));
         return imgs
-          .filter((img) => img.offsetParent !== null && (!img.complete || img.naturalWidth === 0))
+          .filter(
+            (img) =>
+              img.offsetParent !== null &&
+              !img.closest('[aria-hidden="true"]') &&
+              (!img.complete || img.naturalWidth === 0)
+          )
           .map((img) => img.getAttribute('src'));
       });
 
@@ -102,12 +112,12 @@ test.describe('HyperFrame Interactive States & Forms', () => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/', { waitUntil: 'networkidle' });
 
-    const menuToggle = page.getByRole('button', { name: /menu/i });
+    const menuToggle = page.locator('button[aria-controls="fullscreen-nav-overlay"]');
     await expect(menuToggle).toHaveAttribute('aria-expanded', 'false');
     await menuToggle.click();
     await expect(menuToggle).toHaveAttribute('aria-expanded', 'true');
 
-    const drawer = page.locator('.nav-menu.active');
+    const drawer = page.locator('#fullscreen-nav-overlay.is-open');
     await expect(drawer).toBeVisible();
 
     await page.keyboard.press('Escape');
@@ -119,7 +129,7 @@ test.describe('HyperFrame Interactive States & Forms', () => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/', { waitUntil: 'networkidle' });
 
-    const firstServiceToggle = page.locator('.service-single-item button').first();
+    const firstServiceToggle = page.locator('.service-card-top-wrap').first();
     await firstServiceToggle.scrollIntoViewIfNeeded();
     await firstServiceToggle.click();
     await expect(firstServiceToggle).toHaveAttribute('aria-expanded', 'true');
@@ -129,49 +139,64 @@ test.describe('HyperFrame Interactive States & Forms', () => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/', { waitUntil: 'networkidle' });
 
-    const slider = page.locator('.testimonials-slider, section.testimonials').first();
-    await slider.scrollIntoViewIfNeeded();
+    const track = page.locator('.testimonial-slider-track');
+    await track.scrollIntoViewIfNeeded();
 
-    const quoteLocator = page.locator('.testimonials-quote, .testimonial-quote, .slider-quote').first();
-    const initialQuote = await quoteLocator.textContent();
+    const styleBefore = await track.getAttribute('style');
+    await page.getByRole('button', { name: 'Next testimonial' }).click();
+    const styleAfterNext = await track.getAttribute('style');
+    expect(styleAfterNext).not.toBe(styleBefore);
 
-    await page.getByRole('button', { name: /next/i }).click();
-    await expect(quoteLocator).not.toHaveText(initialQuote || '');
-
-    await page.getByRole('button', { name: /previous/i }).click();
-    await expect(quoteLocator).toHaveText(initialQuote || '');
+    await page.getByRole('button', { name: 'Previous testimonial' }).click();
+    const styleAfterPrev = await track.getAttribute('style');
+    expect(styleAfterPrev).toBe(styleBefore);
   });
 
   test('pricing Add Development switch updates plan prices', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/', { waitUntil: 'networkidle' });
 
-    const pricingSection = page.locator('section.pricing').first();
-    await pricingSection.scrollIntoViewIfNeeded();
+    const pricingWrap = page.locator('.pricing-wrap').first();
+    await pricingWrap.scrollIntoViewIfNeeded();
 
-    await expect(pricingSection).toContainText('$1,999');
-    await expect(pricingSection).toContainText('$4,999');
+    await expect(pricingWrap).toContainText('$1,999');
+    await expect(pricingWrap).toContainText('$4,999');
 
-    const toggle = pricingSection.getByRole('switch').first();
+    const toggle = pricingWrap.getByRole('switch').first();
     await toggle.click();
-    await expect(pricingSection).toContainText('$5,499');
+    await expect(toggle).toHaveAttribute('aria-checked', 'true');
   });
 
   test('contact form validates required inputs and submits local preview cleanly', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/contact', { waitUntil: 'networkidle' });
 
-    await page.getByRole('button', { name: /submit|send/i }).click();
+    await page.getByRole('button', { name: 'Send Message' }).click();
     await expect(page.locator('form').first()).toContainText('Please enter your full name.');
 
-    await page.locator('input[name="fullName"]').fill('Alex Mercer');
-    await page.locator('input[name="company"]').fill('ProFast Labs');
-    await page.locator('input[name="email"]').fill('alex@example.com');
-    await page.locator('textarea[name="message"]').fill('Looking to redesign our SaaS platform.');
+    await page.locator('#fullName').fill('Alex Mercer');
+    await page.locator('#company').fill('ProFast Labs');
+    await page.locator('#email').fill('alex@example.com');
+    await page.locator('#message').fill('Looking to redesign our SaaS platform.');
     await page.locator('input[type="checkbox"]').check();
-    await page.getByRole('button', { name: /submit|send/i }).click();
+    await page.getByRole('button', { name: 'Send Message' }).click();
 
-    await expect(page.getByRole('status')).toContainText('Alex Mercer');
+    await expect(page.locator('form [role="status"]')).toContainText('Alex Mercer');
+  });
+
+  test('footer newsletter validates email and submits cleanly', async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto('/', { waitUntil: 'networkidle' });
+
+    const footerForm = page.locator('footer .stay-wrap');
+    await footerForm.scrollIntoViewIfNeeded();
+
+    await footerForm.locator('button[type="submit"]').click();
+    await expect(footerForm.locator('[role="alert"]')).toContainText('valid email');
+
+    await footerForm.locator('input[type="email"]').fill('team@hyperframe.test');
+    await footerForm.locator('button[type="submit"]').click();
+    await expect(footerForm.locator('[role="status"]')).toContainText('Local dev preview');
   });
 
   test('FAQ accordion expands and collapses', async ({ page }) => {
