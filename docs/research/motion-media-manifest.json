@@ -1,0 +1,65 @@
+[
+  {
+    "id": "motion-lenis-smooth-scroll",
+    "component": "SiteLayout / scrollManager.ts",
+    "type": "smooth-scroll",
+    "library": "lenis@1.3.28",
+    "trigger": "Viewport >= 768px and prefers-reduced-motion: no-preference",
+    "details": "duration: 0.9, cubic ease-out, synced to ScrollTrigger.update; disabled when navigation drawer or VideoModal locks scroll"
+  },
+  {
+    "id": "motion-hero-entrance",
+    "component": "HomePage.tsx",
+    "type": "staggered-entrance",
+    "library": "gsap",
+    "trigger": "Mount",
+    "details": "Staggered opacity 0->1 and translateY 36->0 (duration 0.85s, stagger 0.12s, power3.out) on .hero-anim"
+  },
+  {
+    "id": "motion-counters",
+    "component": "HomePage.tsx",
+    "type": "scroll-counter",
+    "library": "gsap + ScrollTrigger",
+    "trigger": ".js-counter entering start 'top 85%' once",
+    "details": "Animates 24+, 3.7M+, and 94% from 0 over 1.8s"
+  },
+  {
+    "id": "motion-sticky-projects",
+    "component": "HomePage.tsx + global.css",
+    "type": "scroll-stacking",
+    "library": "CSS Sticky >= 768px",
+    "trigger": "Vertical scroll",
+    "details": ".project-cl-wrap.is-sticky uses position: sticky; top: 160px with progressive z-index 1..3"
+  },
+  {
+    "id": "motion-services-reveal",
+    "component": "ServiceShowcase.tsx",
+    "type": "hover-and-click-expand",
+    "library": "CSS Grid transition + React state",
+    "trigger": "Pointer hover / button click / Enter-Space",
+    "details": "Expands preview pair, copy, and View Details CTA; pinned-click tracked separately from hover so desktop mouse click never collapses hovered item prematurely"
+  },
+  {
+    "id": "motion-work-process-sync",
+    "component": "WorkProcess.tsx",
+    "type": "scroll-linked-progress",
+    "library": "gsap ScrollTrigger / intersection",
+    "trigger": "Scrolling across stages 01..05",
+    "details": "Synchronizes active process step border/highlight and sticky stage preview image"
+  },
+  {
+    "id": "motion-marquee-cta",
+    "component": "ContactMarquee.tsx + ClientLogoStrip.tsx",
+    "type": "infinite-marquee",
+    "library": "CSS keyframes",
+    "trigger": "Continuous (paused/static under prefers-reduced-motion)",
+    "details": "Seamless dual-track horizontal translateX(-50%) marquee"
+  },
+  {
+    "id": "media-showreel-modal",
+    "component": "AboutPage.tsx + VideoModal.tsx",
+    "type": "youtube-modal",
+    "trigger": "Click Showreel 2025 button",
+    "details": "Loads YouTube iframe uRNlP2BC0EQ inside accessible role=dialog modal with Escape key and backdrop dismissal"
+  }
+]
