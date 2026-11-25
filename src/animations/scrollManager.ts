@@ -17,7 +17,6 @@ export function initSmoothScroll(): () => void {
     duration: 0.9,
     easing: (t) => 1 - Math.pow(1 - t, 3),
     smoothWheel: true,
-    smoothTouch: false,
   });
 
   lenisInstance = lenis;
