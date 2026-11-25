@@ -7,7 +7,15 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "test:e2e": "playwright test",
+    "validate:assets": "tsx scripts/validate-assets.ts",
+    "optimize:media": "tsx scripts/optimize-media.ts",
+    "compare:screenshots": "tsx scripts/compare-screenshots.ts"
   },
   "repository": {
     "type": "git",
@@ -16,7 +24,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/girishlade111/hyperframe/issues"
   },

@@ -1689,7 +1689,7 @@
     "localPath": "/assets/images/backgrounds/Cta-BG-1.avif",
     "licenseStatus": "template-asset-localized",
     "acquisitionStatus": "acquired",
-    "sha256": "",
+    "sha256": "188c8c5c9e31146fd7f48a5b73573f3c5d79d476363ba03366563d3516b6a713",
     "optimizedVariants": [],
     "notes": "Downloaded via curl from fixed Webflow CDN URL with closing parenthesis"
   },
@@ -2371,7 +2371,7 @@
     "localPath": "/assets/images/backgrounds/Contact-BG-1.avif",
     "licenseStatus": "template-asset-localized",
     "acquisitionStatus": "acquired",
-    "sha256": "",
+    "sha256": "3d0f20046f66af923d2a1b58e014759c158b0f4d2e44b10c39109c11c77ecaf0",
     "optimizedVariants": [],
     "notes": "Downloaded via curl from fixed Webflow CDN URL with closing parenthesis"
   },
