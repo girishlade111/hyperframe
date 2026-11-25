@@ -40,7 +40,7 @@ export function ProjectCarousel() {
             >
               {featured.map((project) => (
                 <div key={project.id} className="feature-single-slide">
-                  <ProjectCard project={project} />
+                  <ProjectCard project={project} eager />
                 </div>
               ))}
             </div>

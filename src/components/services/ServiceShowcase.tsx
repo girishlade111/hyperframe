@@ -8,7 +8,8 @@ interface ServiceShowcaseProps {
 }
 
 export function ServiceShowcase({ numberedLabel }: ServiceShowcaseProps) {
-  const [activeId, setActiveId] = useState<string | null>(null);
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [pinnedId, setPinnedId] = useState<string | null>(null);
 
   return (
     <section className={numberedLabel ? 'section service-b' : ''}>
@@ -28,19 +29,26 @@ export function ServiceShowcase({ numberedLabel }: ServiceShowcaseProps) {
           <div className="service-all-wrap">
             <div className="service-flex-wrap">
               {services.map((service) => {
-                const isActive = activeId === service.id;
+                const isActive = pinnedId === service.id || hoveredId === service.id;
                 return (
                   <div
                     key={service.id}
                     className={`service-card ${isActive ? 'is-active' : ''}`}
-                    onMouseEnter={() => setActiveId(service.id)}
-                    onMouseLeave={() => setActiveId(null)}
+                    onMouseEnter={() => setHoveredId(service.id)}
+                    onMouseLeave={() => setHoveredId((prev) => (prev === service.id ? null : prev))}
                   >
                     <button
                       type="button"
                       className="service-card-top-wrap"
                       aria-expanded={isActive}
-                      onClick={() => setActiveId((prev) => (prev === service.id ? null : service.id))}
+                      onClick={() => {
+                        if (pinnedId === service.id) {
+                          setPinnedId(null);
+                          setHoveredId(null);
+                        } else {
+                          setPinnedId(service.id);
+                        }
+                      }}
                     >
                       <span className="service-card-title">{service.title}</span>
                       <span className="service-card-number">{service.index}</span>

@@ -3,9 +3,11 @@ import type { Project } from '../../data/projects';
 
 interface ProjectCardProps {
   project: Project;
+  eager?: boolean;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, eager = false }: ProjectCardProps) {
+  const loadingAttr = eager ? 'eager' : 'lazy';
   return (
     <article className="project-card">
       <Link to={`/project/${project.slug}`} className="project-card-link">
@@ -14,7 +16,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           height={660}
           alt=""
           src={project.backgroundMedia}
-          loading="lazy"
+          loading={loadingAttr}
           className="project-card-banne-image"
           aria-hidden="true"
         />
@@ -34,7 +36,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               height={780}
               alt={`${project.title} project preview`}
               src={project.thumbnail}
-              loading="lazy"
+              loading={loadingAttr}
               className="project-card-image"
             />
           </div>
@@ -57,7 +59,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 {project.services.map((tag) => (
                   <div key={tag.label} className="project-single-ctg">
                     <span className="project-ctg-icon-wrap">
-                      <img width={20} height={20} alt="" src={tag.icon} loading="lazy" />
+                      <img width={20} height={20} alt="" src={tag.icon} loading={loadingAttr} />
                     </span>
                     <span className="project-ctg-text">{tag.label}</span>
                   </div>

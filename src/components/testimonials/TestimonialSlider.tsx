@@ -52,7 +52,6 @@ export function TestimonialSlider({ numberedLabel }: TestimonialSliderProps) {
                           height={16}
                           alt="5 out of 5 stars"
                           src="/assets/icons/Stars.svg"
-                          loading="lazy"
                         />
                       </div>
                       <SectionLabel variant="brace" label={t.index} />
@@ -71,7 +70,6 @@ export function TestimonialSlider({ numberedLabel }: TestimonialSliderProps) {
                             height={112}
                             alt={t.author}
                             src={t.avatar}
-                            loading="lazy"
                             className="testimonial-author-image"
                           />
                         </div>
